@@ -35,8 +35,7 @@ def faltas(horas, salario_bruto, dias_q_faltou, carga_horaria):
     preco_falta = (salario_bruto/220) * horas
     
     if dias_q_faltou != 0:
-        for i in range(dias_q_faltou):
-            falta_dsr = (salario_bruto/220) * carga_horaria
+            falta_dsr = (salario_bruto/220) * (carga_horaria * dias_q_faltou)
     else:
         falta_dsr = 0.
     
